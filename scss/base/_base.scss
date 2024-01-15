@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #1A162E;
+    --icon-color: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(2404%) hue-rotate(210deg) brightness(92%) contrast(101%);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -13,6 +18,11 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Gordita", sans-serif;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    color: inherit;
 }
 
 a {
@@ -24,4 +34,8 @@ button {
     border: none;
     outline: none;
     background: transparent;
+}
+
+.icon {
+    fill: var(--icon-color);
 }

@@ -60,6 +60,11 @@ table {
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #1A162E;
+  --icon-color: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(2404%) hue-rotate(210deg) brightness(92%) contrast(101%);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -67,6 +72,11 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Gordita", sans-serif;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  color: inherit;
 }
 
 a {
@@ -78,6 +88,10 @@ button {
   border: none;
   outline: none;
   background: transparent;
+}
+
+.icon {
+  fill: var(--icon-color);
 }
 
 .row > *, .container-fluid, .container {
@@ -1111,13 +1125,16 @@ button {
     --grid-gutter-y: 90px;
   }
 }
+.top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background-color: #eee;
 }
 
 .top-bar {
-  display: flex;
-  align-items: center;
   padding: 30px 0;
 }
 
@@ -1126,13 +1143,9 @@ button {
   margin-right: auto;
 }
 .navbar__list {
-  display: flex;
-  align-items: center;
   gap: 30px;
 }
 .navbar__link {
-  display: flex;
-  align-items: center;
   gap: 6px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1143,13 +1156,9 @@ button {
 }
 
 .top-act {
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
 .top-act__group {
-  display: flex;
-  align-items: center;
   min-width: 50px;
   height: 50px;
   border-radius: 8px;
@@ -1160,12 +1169,11 @@ button {
   padding: 13px;
 }
 .top-act__btn {
-  display: flex;
-  align-items: center;
   gap: 10px;
   padding: 13px 20px;
+  cursor: pointer;
 }
-.top-act__tile {
+.top-act__title {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
@@ -1180,6 +1188,7 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .logo {
