@@ -4,7 +4,7 @@
     position: absolute;
     left: 0;
     padding-top: 54px;
-    //display: none;
+    display: none;
     width: min(1240px, 100%);
 
     &__inner {
@@ -93,11 +93,12 @@
     }
 
     &__item {
-        &:hover .sub-menu {
+        &--active .sub-menu {
             display: grid;
         }
     }
 
+    &__item--active > &__link,
     &__item:hover > &__link {
         color: #0071DC;
         font-weight: 500;
