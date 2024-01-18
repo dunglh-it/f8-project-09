@@ -26,14 +26,6 @@
         justify-content: space-between;
         padding: 16px 0;
     }
-
-    &__more {
-        display: none;
-
-        @include abstracts.breakpoint(lg) {
-            display: block;
-        }
-    }
 }
 
 .navbar {
@@ -65,10 +57,7 @@
     }
 
     &__close-btn {
-        display: none;
-
         @include abstracts.breakpoint(lg) {
-            display: block;
             padding: 10px 40px;
         }
     }
@@ -151,10 +140,6 @@
         border-radius: 8px;
         background: var(--top-act-group-bg-color);
         box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
-
-        @include abstracts.breakpoint(md) {
-            display: none;
-        }
     }
 
     &__group--single &__btn {
