@@ -14,6 +14,10 @@
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 141.667%;
+
+        @include abstracts.screen(sm) {
+            font-size: 2.2rem;
+        }
     }
 
     &__cate {
@@ -26,5 +30,15 @@
         @include abstracts.screen(md) {
             --grid-gutter-y: 20px;
         }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__filter-btn {
+        margin-bottom: 20px;
     }
 }
