@@ -7,6 +7,7 @@ html {
 
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
+
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
@@ -41,7 +42,7 @@ html {
     --filter-btn-color: #6C6C72;
     --filter-btn-bg: #fff;
 
-    --like-btn-bg: #fff;
+    --like-btn-bg: var(--filter-btn-bg);
 
     // Product card
     --product-card-color: #1A162E;
@@ -53,4 +54,9 @@ html {
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-form-tag-bg: #F8F8FB;
+
+    // Footer
+    --footer-bg-color: var(--header-bg-color);
+    --footer-color: #1A162E;
+    --footer-text-color: #6e6d74;
 }
