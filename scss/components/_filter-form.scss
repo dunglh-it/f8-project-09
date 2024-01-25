@@ -152,6 +152,10 @@
             &-icon {
                 margin-left: 12px;
             }
+
+            @include abstracts.screen(sm) {
+                font-size: 1.6rem !important;
+            }
         }
 
         &-select-wrap {
