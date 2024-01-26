@@ -62,4 +62,15 @@ html.dark {
     --footer-bg-color: var(--header-bg-color);
     --footer-color: #fff;
     --footer-text-color: #9e9da6;
+
+    // Auth
+    --auth-color: #B9BABE;
+    --auth-intro-bg: #171C28;
+    --auth-content-bg: #292E39;
+    --auth-text-color: var(--form-text-color);
+    --auth-border-color: var(--form-border-color);
+
+    // Forms
+    --form-border-color: #B9BABE;
+    --form-text-color: var(--form-border-color);
 }

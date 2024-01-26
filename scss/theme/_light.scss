@@ -59,4 +59,15 @@ html {
     --footer-bg-color: var(--header-bg-color);
     --footer-color: #1A162E;
     --footer-text-color: #6e6d74;
+
+    // Auth
+    --auth-color: #1A162E;
+    --auth-intro-bg: #FAFAFD;
+    --auth-content-bg: #fff;
+    --auth-text-color: var(--form-text-color);
+    --auth-border-color: var(--form-border-color);
+
+    // Forms
+    --form-border-color: #D2D1D6;
+    --form-text-color: #9E9DA8;
 }

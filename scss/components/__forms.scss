@@ -1,0 +1,61 @@
+.form {
+    &__group {
+        &--inline {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__group, &__text-input {
+        margin-top: 30px;
+
+    }
+
+    &__text-input {
+        display: flex;
+        align-items: center;
+
+        padding: 0 12px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1.5px solid var(--form-border-color);
+
+        &:focus-within {
+            border-color: #77dae6;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        height: 100%;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+
+        &-icon {
+            margin-left: 12px;
+        }
+
+        &::placeholder {
+            color: var(--form-border-color);
+        }
+    }
+
+    &__pull-right {
+        margin-left: auto;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &-label {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%;
+            color: var(--form-text-color);
+        }
+    }
+}
